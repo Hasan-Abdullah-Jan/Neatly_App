@@ -1,0 +1,121 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+/* Base reset + Neatly foundations */
+html {
+  line-height: 1.5;
+  tab-size: 4;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  margin: 0;
+  font-family: var(--type-font-sans);
+  font-size: var(--type-base);
+  line-height: var(--type-normal);
+  color: var(--color-foreground);
+  background: var(--color-background);
+  min-height: 100vh;
+  overflow-x: hidden;
+  /* Logical properties for RTL safety */
+  padding-inline: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--type-font-display);
+  font-weight: var(--type-weight-semibold);
+  line-height: var(--type-tight);
+  color: var(--color-foreground);
+  margin-top: 0;
+  margin-bottom: var(--space-4);
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: var(--space-4);
+  color: var(--color-foreground-secondary);
+}
+
+a {
+  color: var(--color-liquid-blue);
+  text-decoration: none;
+  border-radius: var(--radius-sm);
+  transition:
+    color var(--motion-duration-release) var(--motion-easing),
+    background-color var(--motion-duration-release) var(--motion-easing);
+}
+
+button,
+input,
+textarea,
+select {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+button {
+  cursor: pointer;
+  margin: 0;
+  background: transparent;
+  border: none;
+  color: inherit;
+  border-radius: var(--radius-pill);
+  padding: 0;
+}
+
+/* Focus rings — visible, 44px minimum targets respected per-component */
+:focus-visible {
+  outline: 2px solid var(--color-liquid-blue);
+  outline-offset: 2px;
+}
+
+/* Reduced motion — swap movement for cross-fades */
+[data-motion='reduced'] * {
+  transition-duration: 0.01ms !important;
+  animation-duration: 0.01ms !important;
+  animation-iteration-count: 1 !important;
+  scroll-behavior: auto !important;
+}
+
+/* High contrast */
+[data-contrast='high'] .glass-border,
+[data-contrast='high'] [class*='border'] {
+  border-width: 1px;
+  opacity: 1;
+}
+
+/* RTL-safe: use logical properties everywhere in components. */
+[dir='rtl'] {
+  /* components must use padding-inline, margin-inline, text-align: start/end */
+}
+
+/* Scrollbar — subtle */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-glass-border);
+  border-radius: var(--radius-pill);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-foreground-muted);
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  .tabular-nums {
+    font-variant-numeric: tabular-nums;
+  }
+}

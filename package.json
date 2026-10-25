@@ -1,0 +1,42 @@
+{
+  "name": "neatly",
+  "private": true,
+  "workspaces": [
+    "apps/app",
+    "packages/ui",
+    "packages/domain",
+    "packages/i18n"
+  ],
+  "scripts": {
+    "dev": "pnpm --filter app dev",
+    "build": "pnpm --filter ui build && pnpm --filter domain build && pnpm --filter i18n build && pnpm --filter app build",
+    "lint": "pnpm --filter ui lint && pnpm --filter domain lint && pnpm --filter i18n lint && pnpm --filter app lint",
+    "typecheck": "pnpm --filter ui typecheck && pnpm --filter domain typecheck && pnpm --filter i18n typecheck && pnpm --filter app typecheck",
+    "test": "pnpm --filter ui test && pnpm --filter domain test && pnpm --filter i18n test && pnpm --filter app test",
+    "test:ui": "pnpm --filter ui test --run",
+    "test:domain": "pnpm --filter domain test --run",
+    "test:i18n": "pnpm --filter i18n test --run",
+    "test:app": "pnpm --filter app test --run",
+    "e2e": "pnpm --filter app e2e",
+    "format": "prettier --write \"**/*.{ts,tsx,js,jsx,json,css,md}\"",
+    "prepare": "husky"
+  },
+  "devDependencies": {
+    "eslint": "^8.57.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-react-hooks": "^4.6.2",
+    "eslint-plugin-react-refresh": "^0.4.7",
+    "husky": "^9.0.11",
+    "prettier": "^3.2.5",
+    "typescript": "^5.4.5",
+    "vite": "^5.2.0",
+    "vitest": "^1.6.0",
+    "@playwright/test": "^1.42.0",
+    "playwright": "^1.42.0",
+    "lint-staged": "^15.2.0"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "packageManager": "pnpm@9.0.0"
+}

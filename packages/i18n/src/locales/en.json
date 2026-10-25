@@ -1,0 +1,79 @@
+{
+  "language": "en",
+  "direction": "ltr",
+
+  "app": {
+    "name": "Neatly",
+    "tagline": "The space care app"
+  },
+
+  "nav": {
+    "home": "Home",
+    "tasks": "Tasks",
+    "workspace": "Workspace",
+    "schedule": "Schedule",
+    "profile": "Profile",
+    "add": "Add",
+    "capture": "Capture",
+    "report": "Report",
+    "finish": "Finish"
+  },
+
+  "common": {
+    "ok": "OK",
+    "cancel": "Cancel",
+    "save": "Save",
+    "delete": "Delete",
+    "edit": "Edit",
+    "close": "Close",
+    "back": "Back",
+    "continue": "Continue",
+    "review": "Review",
+    "home": "Home",
+    "finishForNow": "Finish for now",
+    "waitingForAttention": "Waiting for attention",
+    "loading": "Loading…",
+    "error": "Something went wrong",
+    "retry": "Retry",
+    "offline": "You're offline. Changes will sync when you're back online.",
+    "online": "You're back online.",
+    "addSomething": "Add something whenever you're ready.",
+    "spaceIsClear": "Your space is clear."
+  },
+
+  "theme": {
+    "dark": "Dark",
+    "light": "Light",
+    "auto": "Auto",
+    "glass": "Glass",
+    "liquid": "Liquid",
+    "lite": "Lite",
+    "solid": "Solid",
+    "motion": "Motion",
+    "full": "Full",
+    "reduced": "Reduced",
+    "contrast": "Contrast",
+    "normal": "Normal",
+    "high": "High"
+  },
+
+  "orb": {
+    "ariaLabel": "{{percent}} percent of today's tasks verified",
+    "submittedLabel": "{{percent}} percent submitted, awaiting review"
+  },
+
+  "timeOfDay": {
+    "morning": "Good morning",
+    "afternoon": "Good afternoon",
+    "evening": "Good evening",
+    "night": "Good night"
+  },
+
+  "settings": {
+    "title": "Settings",
+    "haptics": "Haptics",
+    "sound": "Sound",
+    "hapticsDesc": "Light tactile feedback",
+    "soundDesc": "Subtle audio cues (off by default)"
+  }
+}

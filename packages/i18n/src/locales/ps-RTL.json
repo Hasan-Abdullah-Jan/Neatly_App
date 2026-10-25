@@ -1,0 +1,79 @@
+{
+  "language": "ps",
+  "direction": "rtl",
+
+  "app": {
+    "name": "Neatly",
+    "tagline": "℞ǝuǝɥʇ ɘɐɔᵷs"
+  },
+
+  "nav": {
+    "home": "ǥǝᴉH",
+    "tasks": "sᴉᴚǫ",
+    "workspace": "ɘɯᴉƨǝ℞",
+    "schedule": "Ǝƃɘɐᗡ",
+    "profile": "ǝɹƃᴉɹd",
+    "add": "ᗡɒ",
+    "capture": "ᗡɐɔƃu∀",
+    "report": "ʇɘɹǝR",
+    "finish": "sᴉᴣᴎ"
+  },
+
+  "common": {
+    "ok": "KO",
+    "cancel": "℞ᴉᴎɒɔ",
+    "save": "ᐸᴚ",
+    "delete": "ǝℲǁᴉ℞",
+    "edit": "ᗡᴉ℞",
+    "close": "℞ᴉɔ",
+    "back": "ℍɒᗡ",
+    "continue": "Ǝuᴚᴉℕɘ",
+    "review": "℥ᴉǃǝɹ",
+    "home": "ᗡᴉW",
+    "finishForNow": "sᴉᴣᴎ ɟoʍ ɐu",
+    "waitingForAttention": "ℷᴉᴎǫ⅄ ɿɐʇ℥ℕ℞",
+    "loading": "ƃℵ∀o℞…",
+    "error": "Ǝuǝℕ ɡǝʍ∀ll ℞oᴚʇ",
+    "retry": "⊥℥℥",
+    "offline": "ʎoʇǝɘℕ uɘℝ sᴉɘoℕƆ",
+    "online": "yoʇ ℥ɒcƃ oℵɘℵ",
+    "addSomething": "ᗡɒ ƨoμǝᗡu ᴍɥǝℕ ʇɘɘ∀ɔ ɯ∀hᴉ℞",
+    "spaceIsClear": "yoʇ ℥ɒ℉Is ℭℓɘℝ∀"
+  },
+
+  "theme": {
+    "dark": "ᴎᴚ",
+    "light": "℥ᴎ⅁",
+    "auto": "o∀",
+    "glass": "ƨ∀∙",
+    "liquid": "ℒ⅂ǫɘ",
+    "lite": "℥ᴚ",
+    "solid": "ǁoℒɘ",
+    "motion": "ℕo⅄",
+    "full": "ℒℓᴚ",
+    "reduced": "pɘɔᴉᴎ",
+    "contrast": "ℵʇnɘℕƆ",
+    "normal": "⅃oɿᴚ",
+    "high": "ℍ¡"
+  },
+
+  "orb": {
+    "ariaLabel": "⅀ɘ℞ℹ⊥ oℵ 𝒹oℵɘ⅂ ʇoℵɘɥſ sɘɓɐɔƃ⅂ sᴉ℥⅂",
+    "submittedLabel": "⅀ɘ℞ℹ⊥ oℵ 𝒹oℵɘ⅂ ʇoℵɘɥſ sɘɓɐɔƃ⅂ sᴉ℥⅂"
+  },
+
+  "timeOfDay": {
+    "morning": "⅃oϽɘoℝ ɿℵ",
+    "afternoon": "oℵℕɘ∂℘ ɿℵ",
+    "evening": "⅁ℕℕƎ ɿℵ",
+    "night": "⅁ϽuɘN ɿℵ"
+  },
+
+  "settings": {
+    "title": "℥ɘℇo⊥∅",
+    "haptics": "ℎɐ℘⊥Ʌ",
+    "sound": "bɘℕ",
+    "hapticsDesc": "ℒɒ⅀ℙ ɿ⅂ℎℑ℅ ∂ℕo⅂k",
+    "soundDesc": "⅂ℵoℤ⅁ ɘɔɅɒ⅂ oℸ ∓ɘ Đ"
+  }
+}
