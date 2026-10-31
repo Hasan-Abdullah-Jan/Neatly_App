@@ -41,3 +41,7 @@ trace/
 
 # Turborepo
 .turbo/
+
+# PWA dev
+dev-dist/
+.vercel
