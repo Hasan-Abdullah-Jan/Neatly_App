@@ -1,2 +1,0 @@
--- Neatly — Level 1 baseline migration (empty)
--- No tables yet; business schema arrives in later levels.

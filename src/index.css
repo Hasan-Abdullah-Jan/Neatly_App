@@ -1,0 +1,96 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Theme colors as RGB channels so Tailwind opacity modifiers (bg-brand/10) work. */
+:root {
+  --bg: 246 247 251;
+  --surface: 255 255 255;
+  --raised: 240 242 248;
+  --line: 224 228 237;
+  --fg: 17 20 29;
+  --fg-2: 59 70 90;
+  --muted: 105 115 134;
+  --brand: 47 111 245;
+  --brand-fg: 255 255 255;
+  --ok: 21 128 61;
+  --warn: 180 83 9;
+  --bad: 190 18 60;
+  color-scheme: light;
+}
+
+.dark {
+  --bg: 15 18 26;
+  --surface: 26 31 43;
+  --raised: 35 42 57;
+  --line: 48 58 77;
+  --fg: 245 247 250;
+  --fg-2: 201 210 224;
+  --muted: 138 151 176;
+  --brand: 125 160 255;
+  --brand-fg: 15 18 26;
+  --ok: 74 222 128;
+  --warn: 251 191 36;
+  --bad: 251 113 133;
+  color-scheme: dark;
+}
+
+@layer base {
+  html {
+    -webkit-tap-highlight-color: transparent;
+  }
+  body {
+    @apply bg-bg text-fg font-sans antialiased;
+    min-height: 100dvh;
+  }
+  :focus-visible {
+    outline: 2px solid rgb(var(--brand));
+    outline-offset: 2px;
+  }
+  input,
+  select,
+  textarea {
+    @apply bg-surface text-fg;
+  }
+}
+
+@layer components {
+  .card {
+    @apply rounded-2xl border border-line bg-surface shadow-card;
+  }
+  .input {
+    @apply w-full rounded-xl border border-line bg-surface px-3 py-2.5 text-sm text-fg placeholder:text-muted/70 focus:border-brand focus:outline-none focus:ring-2 focus:ring-brand/25;
+  }
+  .label {
+    @apply mb-1.5 block text-xs font-medium uppercase tracking-wide text-muted;
+  }
+  .chip {
+    @apply inline-flex items-center gap-1 whitespace-nowrap rounded-full border border-line px-3 py-1.5 text-sm text-fg-2 transition-colors hover:bg-raised;
+  }
+  .chip-on {
+    @apply border-brand bg-brand/10 text-brand;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+@keyframes pop {
+  0% { transform: scale(0.6); }
+  60% { transform: scale(1.15); }
+  100% { transform: scale(1); }
+}
+@keyframes rise {
+  from { transform: translateY(12px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+.animate-pop { animation: pop 280ms ease-out; }
+.animate-rise { animation: rise 220ms ease-out; }
+
+.pb-safe { padding-bottom: env(safe-area-inset-bottom); }

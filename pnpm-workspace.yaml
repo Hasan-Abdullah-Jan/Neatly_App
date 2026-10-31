@@ -1,5 +1,0 @@
-packages:
-  - apps/app
-  - packages/ui
-  - packages/domain
-  - packages/i18n
